@@ -32,6 +32,11 @@ public class Ventana extends JFrame{
     public void initComponents(){
         getContentPane().setLayout(null);
         color.setBounds(10, 80, 150, 25);
+        color.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new EscogerColor(objdibujar);
+            }
+        });
         grosorTrazo.setBounds(265, 40, 100, 25);
         grosorTrazo.setFont(f1);
         grosor.setMaximum(10);
